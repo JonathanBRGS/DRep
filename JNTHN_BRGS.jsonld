@@ -1,0 +1,70 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "doNotList": false,
+    "givenName": "JNTHN_BRGS",
+    "motivations": "Eu, Jonathan Borges de Araújo, estou me candidatando a Representante Delegado (DRep) na rede Cardano motivado pelos meus princípios pessoais e pela minha visão econômica. Valorizo a honestidade, integridade e justiça, guiado pela minha fé cristã e pelos ensinamentos de Jesus Cristo. Além disso, sou inspirado pelas ideias de Ludwig von Mises sobre liberdade econômica e descentralização. Com minha experiência na comunidade Cardano, estou comprometido em defender os interesses dos titulares de ADA e promover um crescimento sustentável e inovador da rede.\n",
+    "objectives": "Prezado(a) Titular de ADA\n\nSou Jonathan Borges de Araújo, candidato a Representante Delegado (DRep) na rede Cardano. Entendo a importância de nossas decisões para o crescimento e a sustentabilidade da rede e peço que considere permitir-me representá-lo daqui pra frente como DRep nas próximas votação.\n\nComo brasileiro e cristão, sou guiado pelos valores de honestidade, integridade e justiça. Sou também grande defensor e entusiasta das ideias de Ludwig von Mises, que me inspiram a promover liberdade econômica e descentralização. Acredito que as decisões devem estar nas mãos dos indivíduos, tomando-as com responsabilidade e sabedoria.\n\nMinha experiência na Cardano, aliada aos meus valores e habilidades técnicas, me capacitam a contribuir significativamente com a comunidade. Comprometo-me a defender os interesses dos titulares de ADA e a promover: liberdade, prosperidade e fraternidade.\n\nConto com seu voto para garantir que a Cardano continue crescendo de forma justa, sábia e sustentável.",
+    "paymentAddress": "addr1q8md67w8upv3057rah4whfg2q7l2etpdrszapr5dwd86wmdye6q5flqu0nl0p9w9qjzhecd7su4efm2dfwu0ek0qll7q0ttzwr",
+    "qualifications": "Considero apto para ser um DRep devido as minhas habilidades e experiência na área de tecnologia. Atualmente, estou aprofundando meus conhecimentos em Análise e Desenvolvimento de Sistemas pela Universidade Veiga de Almeida, proporcionando-me sólida compreensão das complexidades tecnológicas e desafios da criptografia. Essa formação acadêmica, aliada à minha experiência prática, me permite abordar os desafios da Cardano com uma visão técnica apurada e consciente.\n\nQuero contribuir com a governança e o crescimento da rede. Estou preparado para utilizar os meus conhecimentos para assegurar que as minhas decisões tomadas sejam baseadas em análises técnicas e responsáveis, sempre buscando o melhor para a comunidade Cardano. Acredito que minha formação me dá uma base sólida para representar os interesses dos titulares de ADA e contribuir para o sucesso contínuo da rede. Conto com seu voto!",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Label",
+        "uri": "https://x.com/JNTHN_BRGS"
+      }
+    ]
+  }
+}

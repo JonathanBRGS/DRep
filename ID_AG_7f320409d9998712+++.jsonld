@@ -1,0 +1,55 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "comment": "While we agree with the need for predictability and sustainability in Cardano’s Treasury, we do not agree with the proposed measures. Establishing percentage limits would be the best way to provide predictability and sustainability to the Treasury. See Constitutional Amendment No. 95 of 2016 of the Federative Republic of Brazil, which establishes that the growth rate of public spending will be limited to the percentage growth of the national GDP. Despite the many problems of the Brazilian administration, Constitutional Amendment No. 95 of 2016 is commendable. We do not consider it prudent to approve GAs that require subsequent approvals. The proposed results and effects of GAs should depend as little as possible on the approval of other GAs. Despite the negative response, we commend DRep’s intention to promote stability and predictability in the Treasury. We respectfully ask you to improve the proposal so that we may agree in the future."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

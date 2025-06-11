@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "The proposal represents a strategic mechanism for sustaining critical infrastructure by ensuring continuous funding for a set of projects or entities that provide structural services to the network, such as education, governance, open-source tools, audits, and technical standards.\nCurrently, the Project Catalyst funding model relies on periodic cycles and voting processes that, while democratic, do not ensure operational continuity for fundamental projects. This creates volatility in the maintenance of initiatives that are essential to the resilience and security of the network, such as parameter validators, code repositories, public libraries, multilingual technical documentation, oracle infrastructure, and bridges with regulators.\n\nBy creating a stable channel of resources for projects validated as essential by the community or by a transparent technical committee, the proposal prevents funding failures from compromising structural services. This stability directly contributes to:\n\n- Resilience: ensures the continuity of critical operations even in periods of low community engagement or external events (such as bear markets);\n\n- Growth: ensures the longevity of tools that serve as a basis for new developers, entrepreneurs, and validators to enter the network;\n\n- Security: allows for continuous independent audits, code reviews, response to vulnerabilities, and the development of standards and technical best practices.\nProvided that the project is implemented with strict evaluation criteria, transparency in spending, rotation mechanisms, and the possibility of replacing beneficiaries, it can become a backbone of Cardano's sustainability, ensuring that decentralization is viable in practice."
+  },
+  "hashAlgorithm": "blake2b-256"
+}

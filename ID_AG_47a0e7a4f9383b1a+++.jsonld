@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "We have decided to vote yes because this governance action is essential to ensure the continuity and stability of Cardano’s Constitutional Committee. The current committee’s mandate is nearing its end, and formalizing the results of the recent elections is crucial for the new committee to assume its duties without interruption, guaranteeing the proper functioning of the network’s governance.\n\nThe electoral process followed all the guidelines established by the Cardano Constitution, being transparent, accessible, and auditable, which strengthens the legitimacy of the elected members. Furthermore, the adoption of staggered terms promotes an orderly transition and prevents disruptions, maintaining continuity in strategic decision-making.\n\nBy voting yes, we support the democratic renewal and institutional strengthening of the Constitutional Committee, ensuring that important decisions for Cardano’s future are made with legitimacy and efficiency. This action reinforces community trust and ensures the safe and stable evolution of the ecosystem.\n\nFor these reasons, voting yes means voting for stability, transparency, and the continuous progress of Cardano’s decentralized governance."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
